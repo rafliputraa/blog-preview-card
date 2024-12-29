@@ -19,7 +19,7 @@
     /* Font Families */
     --font-family-primary: 'Figtree', sans-serif;
 
-  /* Typography Presets */
+  /* Typography Presets for Mobile Screen */
     --text-preset-1-font-size: 1.25rem; /* 20px */
     --text-preset-1-line-height: 1.5; /* 150% */
     --text-preset-1-font-weight: 800; /* Extra Bold */
@@ -36,6 +36,13 @@
     --text-preset-3-letter-spacing: 0;
 
     --text-preset-3-bold-font-weight: 800; /* Extra Bold */
+
+    /* Typography Presets for Desktop Screen */
+    --desktop-text-preset-1-font-size: 1.5rem; /* 24px */
+
+    --desktop-text-preset-2-font-size: 1rem; /* 16px */
+
+    --desktop-text-preset-3-font-size: 0.875rem; /* 14px */
 
 
     /* spacing */
@@ -156,19 +163,33 @@ body {
     color: var(--gray-950);
 }
 
+@media (min-width: 768px) {
+    .content-box {
+        width: 24rem;
+        max-height: 32.625rem;
+    }
+    
+    .content-image {
+        height: 12.5rem;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .content-category {
+        font-size: var(--desktop-text-preset-3-font-size);
+    }
+    
+    .content-publish-date {
+        font-size: var(--desktop-text-preset-3-font-size);
+    }
+    
+    .content-title {
+        font-size: var(--desktop-text-preset-1-font-size);
+    }
+    
+    .content-detail {
+        font-size: var(--desktop-text-preset-2-font-size);
+    }
+    
+    .content-author p {
+        font-size: var(--desktop-text-preset-3-font-size);
+    }
+}

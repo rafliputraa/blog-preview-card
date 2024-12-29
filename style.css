@@ -1,6 +1,7 @@
 @font-face {
-    font-family: Figtree;
-    src: url(assets/fonts/Figtree-VariableFont_wght.ttf), url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+    font-family: 'Figtree';
+    src: url('/blog-preview-card/assets/fonts/Figtree-VariableFont_wght.ttf'), 
+         url('/blog-preview-card/assets/fonts/Figtree-Italic-VariableFont_wght.ttf');
 }
 
 * {
@@ -17,7 +18,7 @@
     --white: #FFFFFF;
 
     /* Font Families */
-    --font-family-primary: Figtree, sans-serif;
+    --font-family-primary: 'Figtree', sans-serif;
 
   /* Typography Presets for Mobile Screen */
     --text-preset-1-font-size: 1.25rem; /* 20px */
